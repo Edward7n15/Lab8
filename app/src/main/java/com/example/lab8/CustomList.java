@@ -80,11 +80,11 @@ public class CustomList extends ArrayAdapter<City> {
      *       If the city is not in the list.
      *
      */
-    /*public void deleteCity(City city) {
-        if (!cities.remove(city)) {
+    public void deleteCity(City city) {
+        /*if (!cities.remove(city)) {
             throw new IllegalArgumentException(("City not found in the list!"));
-        }
-    }*/
+        }*/
+    }
 
     /**
      * Returns the number of cities in the list.

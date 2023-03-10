@@ -66,7 +66,7 @@ public class CustomListTest {
      * Tests if CustomList.deleteCity() method correctly removes a city from the CustomList
      * and updates the count of cities in the list.
      */
-    /*@Test
+    @Test
     public void testDeleteCity() {
         CustomList list = new CustomList(null, new ArrayList<>());
 
@@ -86,7 +86,7 @@ public class CustomListTest {
         Assert.assertFalse(list.hasCity(city1));
         Assert.assertTrue(list.hasCity(city2));
         Assert.assertTrue(list.hasCity(city3));
-    }*/
+    }
 
     /**
      * Tests if CustomList.countCities() method correctly returns the count of cities
