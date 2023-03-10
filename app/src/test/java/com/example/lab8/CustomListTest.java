@@ -53,49 +53,4 @@ public class CustomListTest {
         Assert.assertTrue(list.hasCity(city2));
         Assert.assertFalse(list.hasCity(new City("Toronto", "ON")));
     }
-
-    /**
-     * Tests if CustomList.deleteCity() method correctly removes a city from the CustomList
-     * and updates the count of cities in the list.
-     */
-    @Test
-    public void testDeleteCity() {
-        CustomList list = new CustomList(null, new ArrayList<>());
-
-        City city1 = new City("Edmonton", "AB");
-        City city2 = new City("Vancouver", "BC");
-        City city3 = new City("Toronto", "ON");
-
-        list.addCity(city1);
-        list.addCity(city2);
-        list.addCity(city3);
-
-        Assert.assertEquals(3, list.getCount());
-
-        list.deleteCity(city1);
-
-        Assert.assertEquals(2, list.getCount());
-        Assert.assertFalse(list.hasCity(city1));
-        Assert.assertTrue(list.hasCity(city2));
-        Assert.assertTrue(list.hasCity(city3));
-    }
-
-    /**
-     * Tests if CustomList.countCities() method correctly returns the count of cities
-     * in the CustomList.
-     */
-    @Test
-    public void testCountCities() {
-        CustomList list = new CustomList(null, new ArrayList<>());
-
-        list.addCity(new City("Zhuhai", "GD"));
-        list.addCity(new City("Shenzhen", "GD"));
-        list.addCity(new City("ZhengZhou", "HN"));
-        list.addCity(new City("TaiAn", "SD"));
-        list.addCity(new City("Shanghai", "CN"));
-        list.addCity(new City("Beijing", "BJ"));
-
-        Assert.assertEquals(6, list.countCities());
-    }
-
 }
