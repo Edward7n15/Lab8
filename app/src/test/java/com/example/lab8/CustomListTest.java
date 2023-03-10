@@ -92,7 +92,7 @@ public class CustomListTest {
      * Tests if CustomList.countCities() method correctly returns the count of cities
      * in the CustomList.
      */
-    /*@Test
+    @Test
     public void testCountCities() {
         CustomList list = new CustomList(null, new ArrayList<>());
 
@@ -101,6 +101,6 @@ public class CustomListTest {
         City city3 = new City("Toronto", "ON");
 
         Assert.assertEquals(3, list.countCities());
-    }*/
+    }
 
 }
