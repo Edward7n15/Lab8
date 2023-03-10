@@ -80,4 +80,22 @@ public class CustomListTest {
         Assert.assertTrue(list.hasCity(city3));
     }
 
+    /**
+     * Tests if CustomList.countCities() method correctly returns the count of cities
+     * in the CustomList.
+     */
+    @Test
+    public void testCountCities() {
+        CustomList list = new CustomList(null, new ArrayList<>());
+
+        list.addCity(new City("Zhuhai", "GD"));
+        list.addCity(new City("Shenzhen", "GD"));
+        list.addCity(new City("ZhengZhou", "HN"));
+        list.addCity(new City("TaiAn", "SD"));
+        list.addCity(new City("Shanghai", "CN"));
+        list.addCity(new City("Beijing", "BJ"));
+
+        Assert.assertEquals(6, list.countCities());
+    }
+
 }
